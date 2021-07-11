@@ -1,0 +1,158 @@
+{
+    "key": "group_60eaa46584588",
+    "title": "Artist Information",
+    "fields": [
+        {
+            "key": "field_60eaa48884b0e",
+            "label": "Active Artist",
+            "name": "is_active",
+            "type": "true_false",
+            "instructions": "Is this an active artist in the gallery?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_60eaa5a937882",
+            "label": "Artist's Video Clips",
+            "name": "video",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_60eaa5d537883",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Video Clip Link",
+            "sub_fields": [
+                {
+                    "key": "field_60eaa5d537883",
+                    "label": "Video Clip",
+                    "name": "video_clip",
+                    "type": "oembed",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "width": 320,
+                    "height": ""
+                }
+            ]
+        },
+        {
+            "key": "field_60eaa7d514311",
+            "label": "Artist's Publications",
+            "name": "publications",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_60eaa5d537883",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Publication",
+            "sub_fields": [
+                {
+                    "key": "field_60eaa8497c01a",
+                    "label": "Publication Title",
+                    "name": "publication_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_60eaa85c7c01b",
+                    "label": "Publication Description",
+                    "name": "publication_description",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_60eaa7d514312",
+                    "label": "Publication File",
+                    "name": "publication_file",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "artist"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1625991298
+}

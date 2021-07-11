@@ -21,3 +21,15 @@ require_once( IBANNERIZER__PLUGIN_DIR . 'post-types/artist.php' );
 require_once( IBANNERIZER__PLUGIN_DIR . 'post-types/exhibition.php' );
 require_once( IBANNERIZER__PLUGIN_DIR . 'post-types/vroom.php' );
 require_once( IBANNERIZER__PLUGIN_DIR . 'post-types/work.php' );
+
+add_filter('acf/settings/save_json', 'ibn_json_save_point');
+ 
+function ibn_json_save_point( $path ) {
+    
+    // update path
+    $path = IBANNERIZER__PLUGIN_DIR . '/acf-json';
+        
+    // return
+    return $path;
+    
+}
