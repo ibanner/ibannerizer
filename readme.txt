@@ -13,3 +13,4 @@ This is a very simple plugin meant to help me manage my clients sites.
 Not much, for now:
 
 *   Adds Google Analytics tracking code to your site.
+*   Adds a custom login page
