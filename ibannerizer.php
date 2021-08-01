@@ -21,6 +21,7 @@ require_once( IBANNERIZER__PLUGIN_DIR . 'post-types/artist.php' );
 require_once( IBANNERIZER__PLUGIN_DIR . 'post-types/exhibition.php' );
 require_once( IBANNERIZER__PLUGIN_DIR . 'post-types/vroom.php' );
 require_once( IBANNERIZER__PLUGIN_DIR . 'post-types/work.php' );
+require_once( IBANNERIZER__PLUGIN_DIR . 'post-types/sandbox.php' );
 
 add_filter('acf/settings/save_json', 'ibn_json_save_point');
  
@@ -33,3 +34,6 @@ function ibn_json_save_point( $path ) {
     return $path;
     
 }
+
+// add lightbox-gallery image size
+add_image_size( 'lightbox-gallery', 600, 600, array( 'left', 'top' ) ); // Hard crop left top
